@@ -1,0 +1,26 @@
+2026-01-09 11:18:37,035 | INFO | Market order placed: {}
+2026-01-09 11:18:37,035 | ERROR | Market order error: 'orderId'
+2026-01-09 11:22:52,935 | INFO | Market order placed: {}
+2026-01-09 11:22:52,935 | ERROR | Market order error: 'orderId'
+2026-01-09 11:23:50,051 | INFO | Raw market order response: {}
+2026-01-09 11:25:45,513 | INFO | Raw market order response: {}
+2026-01-09 11:30:48,049 | INFO | Raw market order response: {}
+2026-01-09 11:31:59,224 | ERROR | Market order failed
+Traceback (most recent call last):
+  File "C:\Users\mshiv\Desktop\Internship Grind\binance_trading_bot\src\market_orders.py", line 45, in main
+    quantity = adjust_quantity(client, symbol, quantity)
+  File "C:\Users\mshiv\Desktop\Internship Grind\binance_trading_bot\src\market_orders.py", line 18, in adjust_quantity
+    for s in info["symbols"]:
+             ~~~~^^^^^^^^^^^
+KeyError: 'symbols'
+2026-01-09 11:33:34,691 | INFO | Market order submitted: BTCUSDT BUY qty=0.001
+2026-01-09 11:35:39,014 | INFO | Market order submitted: BTCUSDT BUY qty=0.001
+2026-01-09 11:54:05,679 | INFO | REST market order response: {"code":-4164,"msg":"Order's notional must be no smaller than 100 (unless you choose reduce only)."}
+2026-01-09 11:55:38,497 | INFO | REST market order response: {"orderId":11530420179,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"0zfOodRuqWrZACqX6IRIXT","price":"0.00","avgPrice":"0.00","origQty":"0.003","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1767939937959}
+2026-01-09 11:56:30,506 | INFO | REST limit order response: {"code":-4024,"msg":"Limit price can't be lower than 86477.27."}
+2026-01-09 11:56:55,673 | INFO | REST limit order response: {"orderId":11530445930,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"OQGsz7wFsFMpllbUFX5O4L","price":"90000.00","avgPrice":"0.00","origQty":"0.003","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1767940015157}
+2026-01-09 11:58:00,739 | INFO | REST stop-limit order response: {"code":-2021,"msg":"Order would immediately trigger."}
+2026-01-09 11:59:32,647 | INFO | REST stop-limit order response: {"orderId":11530503528,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"c0KC6wFqPPReE7uRuU03ke","price":"95000.00","avgPrice":"0.00","origQty":"0.003","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"STOP","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"94000.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"STOP","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1767940172145}
+2026-01-09 12:05:32,836 | INFO | REST market order response: {"orderId":11530629983,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"hSA6ivZcOLdpetRX2D6uQ4","price":"0.00","avgPrice":"0.00","origQty":"0.003","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1767940532295}
+2026-01-09 12:06:50,875 | INFO | REST limit order response: {"orderId":11530656447,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"RsvKmqzE4GF3CkYEfkJwmx","price":"90000.00","avgPrice":"0.00","origQty":"0.003","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1767940610369}
+2026-01-09 12:08:16,145 | INFO | REST stop-limit order response: {"orderId":11530685516,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"lhQcEndbR9gu45ojwzFgSh","price":"95000.00","avgPrice":"0.00","origQty":"0.003","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"STOP","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"94000.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"STOP","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1767940695880}
